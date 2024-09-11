@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="shortcut icon" href="images/header/logo.svg">
+  <title>Start - Portfolio</title>
+</head>
+  <body>
+    
+    <header>
+        <div class="container c-head">
+        <div class="back-color-nav"></div>
+          <nav>
+            <div class="logo">
+              <a href="index.html"><img class="image"  src="images/header/logo.svg" alt="Not found image"></a>
+              <h1>Start</h1>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+              <span class="b-line bl1"></span>
+              <span class="b-line bl2"></span>
+              <span class="b-line bl3"></span>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+      <div class="container c-main">
+
+        <p class="ontitle">Works</p>
+        <h2 class="title">Portfolio</h2>
+        <p class="subtitle">Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit.</p>
+
+        <div class="row-grid">
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/one-one.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/one-two.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/two-one.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/two-two.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/three-one.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/three-two.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/four-one.svg" alt="Not found image">
+          </a>
+          <a href="#">
+            <div class="border"></div>
+            <img src="images/portfolio/four-two.svg" alt="Not found image">
+          </a>
+        </div>
+
+        <a class="btn" href="#">View Team</a>
+
+      </div>
+    </main>
+
+    <footer>
+        <div class="container c-foot">
+          <div class="left">
+            <a href="#"><img src="images/footer/facebook-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/instagram-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/twiter-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/pinterest-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/tiktok-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/whatsapp-mini.svg" alt=""></a>
+            <a href="#"><img src="images/footer/youtube-mini.svg" alt=""></a>
+          </div>
+          <div class="right">
+            <a class="copy" href="#">&#169; Start, 2022. All rights reserved.</a>
+          </div>
+        </div>
+    </footer>
+
+
+    <script>
+      document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active-burger');
+        document.querySelector('.menu').classList.toggle('open-navbar');
+      })
+    </script>
+  </body>
+</html>
