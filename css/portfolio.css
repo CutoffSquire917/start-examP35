@@ -356,4 +356,73 @@ footer {
 .right a:hover {
   text-decoration: underline;
   color: #f5f5f5;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.c-main {
+  padding: 7vw 0 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (width >= 1800px) {
+  .c-main {
+    padding: 200px;
+  }
+}
+@media (width <= 1450px) {
+  .c-main {
+    padding: 100px 8vw 6vw;
+  }
+}
+@media (width <= 800px) {
+  .c-main .ontitle {
+    font-size: clamp(8px, 8vw, 15px);
+  }
+}
+.c-main .title {
+  margin: 1% 0;
+}
+.c-main .subtitle {
+  max-width: 35%;
+  text-align: center;
+}
+@media (width <= 600px) {
+  .c-main .subtitle {
+    max-width: 80%;
+  }
+}
+.c-main .row-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+  margin: 4vw 0;
+}
+@media (width <= 800px) {
+  .c-main .row-grid {
+    gap: 20px;
+  }
+}
+@media (width <= 630px) {
+  .c-main .row-grid {
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+  }
+}
+.c-main a {
+  position: relative;
+}
+.c-main img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-main .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}/*# sourceMappingURL=portfolio.css.map */

@@ -356,4 +356,89 @@ footer {
 .right a:hover {
   text-decoration: underline;
   color: #f5f5f5;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.c-main {
+  padding: 8% 9%;
+  display: flex;
+  flex-direction: column;
+}
+@media (width >= 1000px) {
+  .c-main {
+    padding: 11vw 9%;
+  }
+}
+@media (width <= 600px) {
+  .c-main {
+    padding: 15vw 4%;
+  }
+}
+.c-main .title {
+  margin: 1% auto;
+}
+.c-main .subtitle {
+  max-width: 35%;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (width <= 600px) {
+  .c-main .subtitle {
+    max-width: 70%;
+  }
+}
+.c-main .row-grid {
+  margin-top: 5%;
+  gap: 3vw;
+}
+@media (width <= 900px) {
+  .c-main .row-grid {
+    grid-template-columns: unset;
+  }
+}
+.c-main .row-grid .leftpanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (width <= 900px) {
+  .c-main .row-grid .leftpanel {
+    justify-content: unset;
+  }
+}
+.c-main .row-grid .leftpanel .subtitle {
+  margin: 0;
+  max-width: none;
+  text-align: left;
+  margin-bottom: -10px;
+}
+@media (width <= 600px) {
+  .c-main .row-grid .leftpanel .subtitle {
+    font-size: clamp(8px, 5vw, 17px);
+  }
+}
+.c-main .row-grid .leftpanel .btn {
+  text-align: center;
+}
+.c-main .row-grid .field {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  background: #e5e5e5;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  padding: 8px;
+  resize: none;
+}
+@media (width <= 900px) {
+  .c-main .row-grid .rightpanel {
+    order: -1;
+  }
+}
+.c-main .row-grid .rightpanel iframe {
+  width: 100%;
+}
+@media (width <= 900px) {
+  .c-main .row-grid .rightpanel iframe {
+    height: 40vw;
+  }
+}/*# sourceMappingURL=contact.css.map */
